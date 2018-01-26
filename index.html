@@ -18,7 +18,20 @@
 	  var location1 = new google.maps.LatLng(50.833001, -0.180321); 
 	  var location2 = new google.maps.LatLng(50.823182, -0.141793); 
 	  var location3 = new google.maps.LatLng(50.826525, -0.153015);
+	  
 	   
+	   var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+		var icons = {
+		  parking: {
+		    icon: iconBase + 'parking_lot_maps.png'
+		  },
+		  library: {
+		    icon: iconBase + 'library_maps.png'
+		  },
+		  info: {
+		    icon: iconBase + 'info-i_maps.png'
+		  }
+		};
  	  var mapOptions = {
 	  center: new google.maps.LatLng(50.82257, -0.13792),
 	  zoom: 14
@@ -42,6 +55,7 @@
 		var marker2 = new google.maps.Marker({ // Set the marker
 			position: location2, // Position marker to coordinates
 			map: map, // assign the market to our map variable
+			icon: icons[parking].icon,
 			title: 'Click here for more details' // Marker ALT Text
 		});
 	   	var infowindow2 = new google.maps.InfoWindow({
