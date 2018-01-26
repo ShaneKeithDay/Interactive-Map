@@ -31,7 +31,8 @@
 		  info: {
 		    icon: iconBase + 'info-i_maps.png'
 		  }
-		};
+	  };
+	   
  	  var mapOptions = {
 	  center: new google.maps.LatLng(50.82257, -0.13792),
 	  zoom: 14
@@ -55,7 +56,7 @@
 		var marker2 = new google.maps.Marker({ // Set the marker
 			position: location2, // Position marker to coordinates
 			map: map, // assign the market to our map variable
-			icon: parking,
+			icon: icons.parking,
 			title: 'Click here for more details' // Marker ALT Text
 		});
 	   	var infowindow2 = new google.maps.InfoWindow({
