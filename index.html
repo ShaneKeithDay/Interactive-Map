@@ -27,17 +27,33 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZl1MN5CrJYR-LNbXkD52UPLD
 			map: map, // assign the market to our map variable
 			title: 'Click here for more details' // Marker ALT Text
 		});
+	   
+		 var infowindow1 = new google.maps.InfoWindow({
+		    content: "Hello World!"
+		  });
+		  infowindow.open(map,marker1);
 
 		var marker2 = new google.maps.Marker({ // Set the marker
 			position: location2, // Position marker to coordinates
 			map: map, // assign the market to our map variable
 			title: 'Click here for more details' // Marker ALT Text
 		});
+	   
+	   	var infowindow2 = new google.maps.InfoWindow({
+		    content: "Hello World!"
+		  });
+		  infowindow.open(map,marker2);
+	   
 	   var marker3 = new google.maps.Marker({ // Set the marker
 			position: location3, // Position marker to coordinates
 			map: map, // assign the market to our map variable
 			title: 'Click here for more details' // Marker ALT Text
 		});
+	   
+	  var infowindow3 = new google.maps.InfoWindow({
+		    content: "Hello World!"
+		  });
+		  infowindow.open(map,marker3);
    }
 	
 google.maps.event.addDomListener(window, 'load', initialize);
