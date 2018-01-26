@@ -14,6 +14,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZl1MN5CrJYR-LNbXkD52UPLD
    {
 	  var location1 = new google.maps.LatLng(50.833001, -0.180321); 
 	  var location2 = new google.maps.LatLng(50.823182, -0.141793); 
+	  var location3 = new google.maps.LatLng(50.823182, -0.141793);
 	   
  	  var mapOptions = {
 	  center: new google.maps.LatLng(50.82257, -0.13792),
@@ -29,6 +30,11 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZl1MN5CrJYR-LNbXkD52UPLD
 
 		var marker2 = new google.maps.Marker({ // Set the marker
 			position: location2, // Position marker to coordinates
+			map: map, // assign the market to our map variable
+			title: 'Click here for more details' // Marker ALT Text
+		});
+	   var marker3 = new google.maps.Marker({ // Set the marker
+			position: location3, // Position marker to coordinates
 			map: map, // assign the market to our map variable
 			title: 'Click here for more details' // Marker ALT Text
 		});
