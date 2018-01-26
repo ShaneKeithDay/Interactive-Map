@@ -25,5 +25,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
  </head>
  <body>
  <div id="map-canvas"></div>
- </body>
+var marker = new google.maps.Marker({position: myCenter});
+
+marker.setMap(map);
+	</body>
  </html> 
